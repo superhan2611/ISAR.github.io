@@ -161,17 +161,26 @@
         <!-- Your image here -->
         <img src="static/images/2.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          <br> <!-- New line --> 
+          <li> For meta-training, we set the agent’s altitude at 300 meters and randomly select subareas within this level as meta-tasks. Each subarea spans an area of 150m × 150m. </li>
+          <li> In the curriculum fine-tuning phase, we aim to adapt the meta-agent to an lower altitude of 15 meters. We implement curriculum training by gradually introducing increasingly complex tasks to the agent in a hierarchical structure. Specifically, we initialize the agent with the meta-policy and conduct training at the altitude of 75 meters, then we lower the drone to 45 meters and finally to 15 meters. </li>
+          <li>  We use ResNet18 to extract the features of current state and target state The combined feature is then fed into the policy network to generate the navigation policy and value. </li>
+          <li>  The total number of episodes required for convergence of metatraining and curriculum fine-tuning is approximately 35K, whereas the standard agent require at least 60K episodes on average to achieve the same performance. </li>
+          
         </h2>
       </div>
       </div>
       </div>
       <div class="item">
+      <div class="columns is-centered">
+      <div class="column is-four-fifths">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/3.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
+     </div>
+     </div>
      </div>
      <div class="item">
       <!-- Your image here -->
