@@ -146,11 +146,11 @@
        <div class="column is-three-fifths">
         <!-- Your image here -->
         <img src="static/images/1.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
+        <p>
           <br> <!-- New line --> 
           <br> <!-- New line --> 
           <b>Two-stage learning framework:</b>  The navigation task consists of two phases: <b>meta-training</b> and <b>curriculum fine-tuning</b>. Meta-training allows the agent to learn a master navigation policy. The hierarchical-structured curriculum adapts the meta-policy to the target task. This meta-policy can further be transferred to novel environments.
-        </h2>
+        </p>
       </div>
       </div>
       </div>
@@ -160,14 +160,14 @@
       <div class="column is-four-fifths">
         <!-- Your image here -->
         <img src="static/images/2.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
+        <p>
           <br> <!-- New line --> 
           <li> For meta-training, we set the agent’s altitude at 300 meters and randomly select meta-tasks within this level. </li>
           <li> In the curriculum fine-tuning phase, we initialize the agent with the meta-policy and conduct training at the altitude of 75 meters, then we lower the drone to 45 meters and finally to 15 meters. </li>
           <li>  We use ResNet18 to extract the features of current state and target state The combined feature is then fed into the policy network to generate the navigation policy and value. </li>
           <li>  The total number of episodes required for convergence of metatraining and curriculum fine-tuning is approximately 35K, whereas the standard agent require at least 60K episodes on average to achieve the same performance. </li>
           
-        </h2>
+        </p>
       </div>
       </div>
       </div>
@@ -176,9 +176,9 @@
       <div class="column is-three-fifths">
         <!-- Your image here -->
         <img src="static/images/3.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
+        <p>
          The illustration of the ISAR framework with adaptive-update step size = 2. During exploration, we learn two types of losses: the interaction loss to update the interaction policy, and the adaptive loss based on trajectory segment with length N to update the adaptation policy. The results show that our ISAR algorithm demonstrates a significant improvement in convergence speed compared to SAVN (traditional MRL). 
-       </h2>
+       </p>
      </div>
      </div>
      </div>
