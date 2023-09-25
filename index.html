@@ -166,10 +166,9 @@
         <h2 class="subtitle"> </h2>
         <p>
           <font size="3">
-          <li> For meta-training, we set the agent’s altitude at 300 meters and randomly select meta-tasks within this level. </li>
-          <li> In the curriculum fine-tuning phase, we initialize the agent with the meta-policy and conduct training at the altitude of 75 meters, then we lower the drone to 45 meters and finally to 15 meters. </li>
+          <li>  We first set the agent’s altitude at 300 meters to implement meta-training. Then, we fine-tune the meta-policy with a hierarchical-structured training curriculum. </li>
           <li>  We use ResNet18 to extract the features of current state and target state The combined feature is then fed into the policy network to generate the navigation policy and value. </li>
-          <li>  Our training strategy outperforms the standard agent which is trained at 15 meters from scratch. </li>
+          <li>  Our training strategy outperforms the standard agent trained from scratch at 15 meters. </li>
           </font>
         </p>
       </div>
